@@ -1,0 +1,8 @@
+.checked{
+    list-style-type: none;
+    background-image: url("https://external-preview.redd.it/3ZUeFrOyYmSE_zw3chJW2_NoUP4LMF2AxzHtx9fKeeo.jpg?width=1080&crop=smart&auto=webp&s=a006b728f1f83fcf693858a693c2040e5373dac4");
+    background-repeat: no-repeat;
+    background-size: 50px 50px;
+    padding-left: 60px;
+    background-position-y: center;
+}

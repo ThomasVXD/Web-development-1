@@ -1,0 +1,17 @@
+.checked {
+    list-style-type: none;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-6wc94tTeXOAEDcBSxgS7vD9M3wh7jNHcDA&s ");
+    background-repeat: no-repeat;
+    background-size: 14px 14px;
+    padding-left: 15px;
+    background-position-y: center;
+}
+
+li {
+    list-style-type: none;
+    background-image: url("https://www.svgrepo.com/show/343025/checkbox-empty.svg");
+    background-repeat: no-repeat;
+    background-size: 14px 14px;
+    padding-left: 15px;
+    background-position-y: center;
+}
