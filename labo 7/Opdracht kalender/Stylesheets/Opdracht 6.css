@@ -1,0 +1,47 @@
+/* Basis tabel opmaak */
+table {
+    border-collapse: collapse; /* Zorgt voor strakke randen */
+    border: 2px solid rgb(35, 37, 70); /* Donkere buitenrand */
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+th, td {
+    border: 1px solid #999; /* Subtiele grijze binnenranden */
+    width: 45px;
+    height: 45px;
+    text-align: right;
+    vertical-align: top;
+    padding: 5px;
+}
+
+/* 6. Maand hoofding: achtergrond rgb(170,170,200) */
+th.month-header {
+    background-color: rgb(170, 170, 200);
+    text-align: center;
+    color: #000;
+    font-size: 1.2em;
+}
+
+/* We selecteren alle <th>'s in de LAATSTE rij van de <thead> */
+thead tr:last-child th {
+    background-color: rgb(35, 37, 70);
+    color: rgb(200, 190, 240);
+    text-align: center; /* Uitlijnen zoals in het voorbeeld */
+}
+/* Zondag (de eerste kolom in de <tbody>) */
+tbody td:first-child {
+    background-color: rgb(255, 220, 220);
+}
+/* Zaterdag (de laatste kolom in de <tbody>) */
+tbody td:last-child {
+    background-color: rgb(255, 220, 220);
+}
+tbody td.other-month {
+    background-color: rgb(230, 230, 230);
+    color: #888;
+}
+tbody td.holiday {
+    background-color: rgb(250, 120, 120);
+    color: black;
+}
