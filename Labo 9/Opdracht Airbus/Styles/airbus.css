@@ -1,0 +1,146 @@
+body {
+    width: 95%;
+    margin: 0 auto;
+    font-family: Verdana, Helvetica, sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+header{
+    position: relative;
+    height: 200px;
+    background-image: url('../Images/bgsky3.jpg');
+    background-size: cover;
+    background-position: center;
+
+    text-align: center;
+    color: darkblue;
+    padding-top: 20px;
+}
+header p:first-of-type{
+    font-size: 300%;
+    font-weight: bold;
+    font-style: italic;
+    margin: 0;
+}
+header p:nth-of-type(2){
+    font-size: 240%;
+    font-weight: bold;
+    margin: 0;
+}
+header img{
+    position: absolute;
+    right: 250px;
+    bottom: 60px;
+    z-index: 1;
+}
+header p{
+    position: relative;
+    z-index: 0;
+}
+main{
+    float: left;
+    width: 75%;
+    padding-right: 10px;
+}
+aside.news{
+    float: right;
+    width: 25%;
+    background-color: #dddddd;
+    border: 1px solid #999999;
+}
+
+aside.news h3{
+    color: white;
+    background-color: blue;
+    text-align: center;
+    font-size: 120%;
+    margin: 0;
+    padding: 5px;
+}
+aside.news p{
+    color:gray;
+    font-size: 90%;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+.introduction{
+    background-color: white;
+    color: black;
+    padding: 20px 20px 20px 20px;
+    display: flex;
+    align-items: flex-start;
+
+}
+.introduction-logo{
+    max-width: 150px;
+    height: auto;
+    flex-shrink: 0;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.introduction p{
+    text-align: justify;
+    flex-grow: 1;
+    margin: 20px 30px 20px 20px;
+
+}
+.introduction p b, .introduction p span{
+    color: blue;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #999999;
+}
+.gallery .foto{
+    background-color: white;
+    padding: 10px;
+    border: 1px dotted #999999;
+}
+.gallery .foto img {
+    width: 180px;
+    height: 180px;
+    display: block;
+}
+
+footer{
+    clear : both;
+}
+
+.bottom-content{
+    background-color: gray;
+    color: white;
+    line-height: 2em;
+    display: flex;
+    padding: 20px 0;
+}
+.bottom-content .block{
+    padding-left: 120px;
+}
+.bottom-content ul{
+    margin: 0;
+    padding-left: 20px;
+}
+.bottom-content a{
+    color: white;
+}
+.bottom-content a:hover{
+    color: red;
+}
+.copyright{
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 10px;
+}
