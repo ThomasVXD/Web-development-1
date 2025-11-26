@@ -11,7 +11,7 @@ body {
 header{
     position: relative;
     height: 200px;
-    background-image: url('/labo 9/Opdracht Airbus/images/bgsky3.jpg');
+    background-image: url('../images/bgsky3.jpg');
     background-size: cover;
     background-position: center;
 
