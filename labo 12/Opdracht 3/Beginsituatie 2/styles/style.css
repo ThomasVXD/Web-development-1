@@ -1,0 +1,109 @@
+html {
+    background-color: #333;
+    font-family: Helvetica, sans-serif;
+    font-size: 1em;
+    padding: 0;
+}
+
+* {
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+header {
+    background: #ddaa00;
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+nav {
+    padding: 5px 2px;
+    background-color: #ccc;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+nav a {
+    border: 1px solid black;
+    margin: 0 5px;
+    text-decoration: none;
+    text-align: center;
+    background-color: white;
+    color: #ddaa00;
+    font-weight: bold;
+    flex-grow: 1;
+    display: block;
+}
+
+img {
+    padding: 0;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+main {
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+}
+
+main div {
+    background-color: white;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+main div a {
+    border: 1px solid #333;
+    margin: 5px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    background-color: #f0f0f0;
+}
+
+body {
+    margin: 5px;
+}
+
+footer {
+    background: #ddaa00;
+}
+
+footer a {
+    background-color: transparent;
+    border: none;
+    color: darkblue;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media screen and (min-width: 700px) {
+    main {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    main div {
+        flex: 1;
+        margin: 5px;
+    }
+}
