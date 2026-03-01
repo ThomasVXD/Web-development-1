@@ -1,0 +1,12 @@
+.knop {
+    width:60px;
+    height:40px;
+    border:1px solid black;
+    background-color:white;
+}
+.geactiveerde-knop{
+    width:60px;
+    height:40px;
+    border:1px solid black;
+    background-color:blue;
+}
