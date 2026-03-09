@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><Oefening 2></title>
+    <link rel="stylesheet" href="Styles/Style.css">
+</head>
+<body>
+<form action="" method="post">
+    <section>
+        <h3>Persoonlijke informatie</h3>
+        <label for="voornaam">Naam*</label>
+        <input type="text" id="voornaam" name="naam" required>
+        <br>
+        <label for="achternaam">achternaam*</label>
+        <input type="text" id="achternaam" name="achternaam" required>
+    </section>
+    <section>
+        <h3>Sport</h3>
+        <p>Welke sport beoefen je?</p>
+        <input type="checkbox"  id="lopen" value="l"><label for="lopen">lopen</label> <br>
+        <input type="checkbox"  id="zwemmen" value="z"><label for="zwemmen">zwemmen</label> <br>
+        <input type="checkbox"  id="roeien" value="r"><label for="roeien">roeien</label> <br>
+    </section>
+    <section>
+        <h3>Communicatievoorkeur</h3>
+        <p>Hoe kunnen we je bereiken?</p>
+        <input type="radio" id="per post" name="com" ><label for="per post">per post</label> <br>
+        <input type="radio" id="e-mail" name="com" ><label for="e-mail">e-mail</label> <br>
+    </section>
+    <section>
+        <h3>favorieten</h3>
+        <label for="favoriete film">favoriete film:</label>
+        <input type="text" id="favoriete film" name="favoriete film">
+        <br>
+        <label for="favoriete quote">favoriete quote:</label>
+        <input type="text" id="favoriete quote" name="favoriete quote" placeholder="geef je favoriete quote">
+        <br>
+        <label for="favoriete eten">favoriete eten:</label>
+        <select id="favoriete eten" name="favoriete eten" size="3">
+            <option value="Hamburger">hamburger</option>
+            <option value="hot-dog">hot-dog</option>
+            <option value="pizza">pizza</option>
+        </select>
+        <br>
+        <label for="favoriete browser">favoriete browser:</label>
+        <input type="text" id="favoriete browser" name="favoriete browser">
+    </section>
+    <section>
+        <h3>Beveiliging & contact</h3>
+        <label for="wachtwoord">Wachtwoord:</label>
+        <input type="text" id="wachtwoord" name="wachtwoord" required>
+        <br>
+        <label for="e-mailadres">e-mailadres:</label>
+        <input type="email" id="e-mailadres" name="e-mail" placeholder="geef je e-mailadres in">
+        <br>
+        <label for="url">favoriete site:</label>
+        <input type="url" id="url" name="url" placeholder="geef de URL van jefavoriete site">
+    </section>
+    <section>
+        <h3>Extra informatie</h3>
+        <label for="favoriete getal tussen 1-10">Favoriete getal tussen 1-10:</label>
+        <input type="number" min="1" max="10" id="favoriete getal tussen 1-10">
+        <br>
+        <label for="favoriete getal tussen 11-1000">Favoriete getal tussen 11-1000:</label>
+        <input type="range" min="11" max="1000" id="favoriete getal tussen 11-1000">
+        <br>
+        <label for="geboortedatum">Wanneer ben je geboren?</label>
+        <input type="date" id="geboortedatum" name="geboortedatum">
+        <br>
+        <label for="postcode">Belgische postcode*:</label>
+        <input type="text" id="postcode" name="postcode" required>
+    </section>
+    <section>
+        <h3>Varia</h3>
+        <label for="zoeken">Zoeken naar iets:</label>
+        <input type="search" id="zoeken" name="zoeken">
+        <br>
+        <label for="lievelingskleur">Wat is je lievelingskleur?</label>
+        <input type="color" id="lievelingskleur" name="lievelingskleur">
+        <br>
+        <input type="file">
+    </section>
+    <input type="submit" name="knop" value="verzenden">
+</form>
+<script src="scripts/Script.js"></script>
+</body>
+</html>
