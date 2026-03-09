@@ -69,7 +69,7 @@
         <input type="date" id="geboortedatum" name="geboortedatum">
         <br>
         <label for="postcode">Belgische postcode*:</label>
-        <input type="text" id="postcode" name="postcode" required>
+        <input type="text" id="postcode" name="postcode" pattern="[1-9][0-9]{3}" minlength="4" maxlength="4" title="Geef een geldige Belgische postcode in (4 cijfers, tussen 1000 en 9999)" required>
     </section>
     <section>
         <h3>Varia</h3>
