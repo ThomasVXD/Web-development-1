@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><Oefening 2></title>
+    <link rel="stylesheet" href="Styles/Style.css">
+</head>
+<body>
+<form action="" method="post">
+    <label for="roker">Is roker</label>
+    <input type="checkbox" id="roker"><br>
+    <p>Moedertaal</p>
+    <input type="radio" id="Nederlands" name="moedertaal" value="nl"><label for="Nederlands">Nederlands</label>
+    <input type="radio" id="frans" name="moedertaal" value="fr"><label for="frans">Frans</label>
+    <input type="radio" id="Engels" name="moedertaal" value="en"><label for="Engels">Engels</label><br>
+    <label for="buurland">Favoriete buurland</label>
+    <select id="buurland" size="3">
+        <option value="Nederland">Nederland</option>
+        <option value="Frankrijk">Frankrijk</option>
+        <option value="pizza">pizza</option>
+    </select><br>
+    <label for="bestelling">Bestelling</label>
+    <select id="bestelling" size="6" multiple>
+        <option value="aardappelen">aardappelen</option>
+        <option value="brood">brood</option>
+        <option value="melk">melk</option>
+        <option value="biefstuk">biefstuk</option>
+        <option value="chips">chips</option>
+        <option value="krant">krant</option>
+    </select>
+    <br>
+    <input type="button" id="knop" value="submit">
+</form>
+<script src="scripts/Script.js"></script>
+</body>
+</html>

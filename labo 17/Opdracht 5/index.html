@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Oefening 2.10 - Validatie</title>
+    <style>
+        .invalid { border: 2px solid red; }
+        .error-text { color: red; margin-left: 10px; }
+    </style>
+</head>
+<body>
+<form>
+    <label for="voornaam">Voornaam:</label>
+    <input type="text" id="voornaam">
+    <span id="errVoornaam" class="error-text"></span><br><br>
+
+    <label for="achternaam">Achternaam*:</label>
+    <input type="text" id="achternaam">
+    <span id="errAchternaam" class="error-text"></span><br><br>
+
+    <label for="geboortedatum">Geboortedatum (jjjj-mm-dd)*:</label>
+    <input type="text" id="geboortedatum">
+    <span id="errGeboortedatum" class="error-text"></span><br><br>
+
+    <label for="email">Email*:</label>
+    <input type="text" id="email">
+    <span id="errEmail" class="error-text"></span><br><br>
+
+    <label for="aantalKinderen">Aantal kinderen:</label>
+    <input type="text" id="aantalKinderen">
+    <span id="errKinderen" class="error-text"></span><br><br>
+
+    <input type="button" id="btnValideer" value="Valideer">
+</form>
+
+<script src="scripts/Script.js"></script>
+</body>
+</html>
