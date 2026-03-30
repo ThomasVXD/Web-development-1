@@ -5,7 +5,7 @@ const setup = () => {
         li.className = "listitem"
     }
     let img = document.createElement("img");
-    img.src = "Images/capy.jpg";
+    img.src = "images/capy.jpg";
     document.body.appendChild(img);
 }
 window.addEventListener("load", setup);

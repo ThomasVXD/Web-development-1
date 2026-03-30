@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #ecf0f1;
+}
+
+h1 {
+    color: #2c3e50;
+}
+
+/* Informatiebalk boven het speelveld */
+#infoBalk {
+    margin-bottom: 16px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#herstart {
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+}
+
+/* Het speelveld: een raster van 4 kolommen */
+#speelveld {
+    display: grid;
+    grid-template-columns: repeat(4, 100px); /* 4 kolommen */
+    gap: 12px;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+/* Elke kaart */
+.kaart {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    border-radius: 8px;
+    border: 3px solid #2c3e50;
+    overflow: hidden;
+
+    /* Zachte animatie bij de border-kleur */
+    transition: border-color 0.3s;
+}
+
+.kaart img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+/* Groene rand = goed gevonden paar */
+.kaart.goed {
+    border-color: #2ecc71;
+}
+
+/* Rode rand = fout (geen paar) */
+.kaart.fout {
+    border-color: #e74c3c;
+}
+
+/* Verberg een kaart maar bewaar de ruimte (zodat andere kaarten niet verschuiven) */
+.kaart.verwijderd {
+    visibility: hidden;
+}

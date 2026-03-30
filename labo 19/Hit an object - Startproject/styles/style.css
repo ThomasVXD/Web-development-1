@@ -1,0 +1,43 @@
+/* Het speelveld: een vaste breedte en hoogte met een rand zodat je het ziet */
+#playField {
+    width: 600px;
+    height: 800px;
+    border: 2px solid black;
+
+    /* position: relative is BELANGRIJK!
+       Hierdoor kan het figuur (dat position: absolute heeft)
+       berekend worden ten opzichte van dit veld */
+    position: relative;
+
+    background-color: #f0f0f0;
+    margin: 10px auto;
+}
+
+/* Het figuur staat absoluut gepositioneerd binnen het speelveld */
+#target {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+
+    /* Verberg het figuur standaard; JavaScript toont het op het juiste moment */
+    display: none;
+
+    /* Handcursor zodat de speler weet dat hij erop kan klikken */
+    cursor: pointer;
+}
+
+/* Scorebord bovenaan de pagina */
+#scoreBord {
+    width: 600px;
+    margin: 10px auto;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#startKnop {
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+}
