@@ -8,9 +8,14 @@ const setup = () => {
             maakKaart(item);
         })
     }
+    document.getElementById("clear history").addEventListener("click", clear);
 }
 let historiek =[];
 
+const clear = () => {
+    localStorage.removeItem("historiek");
+    location.reload();
+}
 const zoek = () => {
     let input = document.getElementById("zoek").value;
     if (input.length === 0) {
